@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- ------------------------------- Favicon ------------------------------- -->
+    <link rel="icon" href="src/images/favicon.png">
+    <title>FM Kitchen & Bar - Home</title>
+    <style>
+        html{scroll-behavior:smooth}*{box-sizing:border-box}@font-face{font-family:regularFont;src:url(src/fonts/Market Fresh.ttf)}body,figure,header,nav,section,ul{margin:0;padding:0;font-family:'regularFont',sans-serif}h1{font-display:'titleFont',sans-serif}a{text-decoration:none;list-style:none}a,li{list-style-type:none}img{object-fit:cover}:root{--fm-red: #DB2E2E;--fm-black: #000000;--fm-soft-black: #28282b;--fm-red-active: #FF3008;--fm-green: #5FB709;--fm-disable: #C2C3C3;--fm-secondary: #757575;--fm-yellow: #FFCA2C;--fm-blue: #2AC2E3;--fm-pink: #E04B87;--fm-bg-sidebar: #202122}#nav-burger,#nav-mobile{display:none}nav{height:100vh}.navbar{display:flex;align-items:flex-start;justify-content:center;height:6.5rem}.navbar ul{display:flex;align-items:center;justify-content:space-around;width:100%;height:inherit;text-align:center}.navbar figure{align-self:center}.navbar figure img{width:auto;height:4.5rem}nav{color:#fff}.button-bar{width:inherit;display:flex;flex-shrink:0;flex-wrap:wrap;justify-content:center}.button-bar,.social-bar{margin-left:auto}.social-bar ul{margin-left:-5rem;line-height:2rem}.hero-angle-buttom-right{-webkit-clip-path:polygon(0 0,100% 0,100% 96%,0 100%);clip-path:polygon(0 0,100% 0,100% 96%,0 100%)}.hero,.scrolldown{display:flex;justify-content:center}.hero{color:#fff;width:100%;height:inherit;align-items:center}.scrolldown{height:10rem;align-items:flex-end}.call-to-action,.scrolldown{width:inherit}.call-to-action-body{display:flex;align-items:flex-start;justify-content:center;width:inherit}.call-to-action-body{align-items:center;justify-content:space-between;height:inherit;flex-shrink:0;flex-wrap:wrap}.call-to-action-body .button-bar a,.slider-hero-selector li{margin:1rem}.main-landing{display:flex;overflow:hidden;margin-top:-5rem;margin-bottom:5rem}.our-story{background-color:var(--fm-red);margin-right:5rem;padding:15rem 5rem 5rem 10rem}.hide-web{display:none}.hide-responsive{display:flex}.text-white{color:#fff}.text-center{text-align:center}.text-disabled{color:var(--fm-disable)}.btn{text-transform:uppercase;padding:1rem 3rem;border-radius:.2rem;border:0;letter-spacing:.2rem;color:#fff;text-align:center;outline:0}.btn-red{background-color:var(--fm-red)}.btn-red-active{background-color:var(--fm-red-active)}.btn-black{background-color:var(--fm-black)}.text-uber-eats-white{color:#fff;letter-spacing:0;text-transform:capitalize}.text-uber-eats-green{color:var(--fm-green);letter-spacing:0;text-transform:capitalize}.text-uppercase{text-transform:uppercase}.sidenav{width:0%}.overlay{height:100%;position:fixed;z-index:100;top:0;right:0;overflow-x:hidden;background-color:var(--fm-bg-sidebar)}#nav-close{position:absolute;top:2vh;right:20px;color:#fff;font-size:20px}.overlay-links{position:relative;width:100%;top:14vh;text-align:left;margin-left:54px}.overlay-links a{display:block;padding:20px;text-decoration:none;font-size:16px;font-weight:900;color:#fff}.overlay-socials{position:absolute;bottom:65px;border-top:1px solid #fff;width:90%;display:block;margin:auto 5%;text-align:center;padding-top:14px}.overlay-socials a{color:#fff;font-size:1rem}.overlay-content{height:inherit;display:flex;color:#fff;align-items:center;justify-content:center;width:100%;padding:.5rem;flex-direction:column;text-align:center}.overlay-content a{margin:.5rem 0}.overlay-content .btn{width:95%}.dot-selector{position:absolute;margin-top:1rem;color:tomato;font-size:.5rem}.navbar a{text-decoration:none}.navbar a,.navbar a:visited{color:#fff}.slider-hero-selector{font-size:.1rem}.slider-hero-first{background:linear-gradient(rgba(20,20,20,.7),rgba(20,20,20,.7)),url(../../images/hero-landing.jpg) no-repeat;background-size:cover;background-position-y:center}@media only screen and (max-width:1090px){.btn{width:18rem}.social-bar{margin-right:1rem}.social-bar ul{width:100%;display:flex;justify-content:center}.social-bar ul{margin-left:0;align-items:flex-end;height:10rem}.navbar-burger-list-item{margin-left:auto;margin-right:1rem}.main-landing{margin:0;margin-top:1rem;flex-shrink:0;flex-wrap:wrap}.main-landing figure{width:100%;padding:1rem}.our-story{padding:0;margin:1rem;padding:2rem}#nav-burger{font-size:26px;display:flex;align-items:flex-start;justify-content:flex-end;top:50%;right:4%;transform:translate(0,-50%)}#nav-mobile{display:block;width:0}.hide-responsive{display:none!important}.hide-web{display:flex}.social-bar{width:100%}.social-bar li{margin:2rem;font-size:2rem}}@media only screen and (max-width:480px){.navbar figure{margin:1rem}.main-landing figure{position:relative;margin-top:0;padding-top:0}.our-story{margin:0;padding:0;margin-top:-7rem;font-size:1rem;padding:10rem 1rem 2rem}}
+    </style>
+</head>
+<body>
+<!-- --------------------------- Nav Responsive ---------------------------- -->
+<div id="nav-mobile" class="overlay">
+    <a href="javascript:void(0)" id="nav-close" onclick="closeNav()">
+        <i class="far fa-times-circle"></i>
+    </a>
+    <a href="">
+        <img src="" alt="">
+    </a>
+    <div class="overlay-links">
+        <a class="text-uppercase" href="index.html" onclick="closeNav()">Home</a>
+        <a class="text-uppercase" href="src/our-story/" onclick="closeNav()">Our Story</a>
+        <a class="text-uppercase" href="src/menu/index.html" onclick="">The Menu</a>
+        <a class="text-uppercase" href="src/location-hours/index.html" onclick="">Location | Hours</a>
+        <a class="text-uppercase" href="src/contact-us/index.html" onclick="closeNav()">Contact Us</a>
+
+    </div>
+    <div class="overlay-socials">
+
+        <a href="">
+            <span class="fa-stack" style="vertical-align: top;">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </span>
+        </a>
+        <a href="">
+            <span class="fa-stack" style="vertical-align: top;">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        <a href="">
+            <span class="fa-stack" style="vertical-align: top;">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+            </span>
+        </a>
+
+        </a>
+    </div>
+</div>
+<!-- --------------------------- Collapse Sidenav --------------------------- -->
+<div id="sidenav" class="overlay sidenav">
+    <a href="javascript:void(0)" id="nav-close" onclick="closeSideNav()">
+        <i class="far fa-times-circle"></i>
+    </a>
+    <div class="overlay-content">
+        <h1>Order Online</h1>
+        <lead class="text-disabled">Choose a delivery option</lead>
+        <a href="#" class="btn btn-black"><span class="text-uber-eats-white">Uber</span> <span class="text-uber-eats-green">Eats</span></a>
+        <a href="#" class="btn btn-red-active"><img src="src/images/doordash-logo.png" alt=""> DoorDash</a>
+        <br>
+        <p class="text-disabled">or</p>
+        <br>
+        <a href="#" class="btn btn-red">Pickup Service</a>
+        <span class="text-center text-disabled">Your order will be ready for pickup <br>at the restaurant in approximately 15 mins.</span>
+    </div>
+</div>
+<!-- ------------------------------- Header -------------------------------- -->
+    <header >
+
+        <nav id="slider-hero" class="hero-angle-buttom-right slider-hero-first">
+
+            <!-- NAVBAR
+            ------------------------------------------------------------------------------------------------------------------------->
+            <div class="navbar">
+                <ul class="hide-responsive">
+                    <li class="hide-responsive"><a href="index.html"  class="text-uppercase">Home <span class="dot-selector"><i class="fas fa-circle"></i></span></a></li>
+                    <li class="hide-responsive"><a href="src/our-story/index.html"  class="text-uppercase">Our story</a></li>
+                    <li class="hide-responsive"><a href="src/menu/index.html"  class="text-uppercase">The menu</a></li>
+                </ul>
+                <figure>
+                    <a href="index.html"><img src="src/images/header-logo.png" alt="logo"></a>
+                </figure>
+                <ul>
+                    <li class="hide-responsive"><a href="src/location-hours/index.html"  class="text-uppercase">Location + Hours</a></li>
+                    <li class="hide-responsive"><a href="src/contact-us/index.html" class="text-uppercase">Contact us</a></li>
+                    <li class="navbar-burger-list-item">
+                        <span class="hide-responsive text-center">
+                            <div>
+
+                                    <img src="src/images/pet-friendly.png" alt="">
+
+                                <br>Pet<br>friendly
+                            </div>
+                        </span>
+                        <span class="hide-web">
+                            <span id="nav-burger" class="nav-burger">
+                                <span onclick="openNav()">&#9776;</span>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- HERO
+            ------------------------------------------------------------------------------------------------------------------------->
+            <article class="hero">
+                <div class="call-to-action">
+                    <div class="call-to-action-body">
+                        <div class="slider-hero-selector">
+                            <ul>
+                                <li class="slider-dot"><a href="0"><i id="slider-dot-one" class="fas fa-circle text-white dot"></i></a></li>
+                                <li class="slider-dot"><a href="1"><i id="slider-dot-two" class="far fa-circle text-white dot"></i></a></li>
+                                <li class="slider-dot"><a href="2"><i id="slider-dot-three" class="far fa-circle text-white dot"></i></a></li>
+                                <li class="slider-dot"><a href="3"><i id="slider-dot-four" class="far fa-circle text-white dot"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="button-bar">
+                            <a id="toogleSideNav" onclick="openSideNav()" class="btn btn-red" href="#"><i class="fas fa-utensils fa-lg"></i> ORDER ONLINE</a>
+                            <a class="btn btn-black" href="#reservation"><i class="fas fa-calendar-alt fa-lg"></i>  RESERVATION</a>
+                        </div>
+                        <div class="social-bar">
+                            <ul>
+                                <li><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/"><i class="fab fa-instagram text-white"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/fmkitchenandbar/"><i class="fab fa-facebook-f text-white"></i> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- SCROLLDOWN
+                        ------------------------------------------------------------------------------------------------------------->
+                        <figure class="scrolldown hide-responsive">
+                            <a href="#main-landing"><img src="src/images/scroll-icon.png" alt=""></a>
+                        </figure>
+
+                    </div>
+
+                </div>
+            </article>
+
+        </nav>
+
+    </header>
+<!-- -------------------------------- Main --------------------------------- -->
+    <section>
+        <article>
+            <div id="main-landing" class="main-landing">
+                    <figure >
+                        <img class="our-story-image"  src="src/images/chef.jpg" alt="">
+                    </figure>
+                    <div class="our-story text-white">
+                        <div class="our-story-title">
+                            <legend>Learn About</legend>
+                            <h1 class="text-uppercase">Our Story</h1>
+                        </div>
+                        <p>
+                            FM Kitchen + Bar is a chef-driven concept
+                            that offers a contemporary take on southern <br>
+                            classics, gourmet burgers, and craft cocktails.
+                            Inspired by his time growing up in Texas, <br>
+                            Executive Chef and co-owner Ryan Hildebrand applies
+                            his fine dining background and techniques to the <br>
+                            southern regional dishes of his youth.
+                            With the same attention-to-detail and quality <br>
+                            established by the team at Triniti,
+                            FM Kitchen + Bar’s delicious offerings are <br>
+                            executed at the highest level, while still being
+                            affordable and approachable, maintaining the welcoming <br>
+                            feel of a timeless neighborhood joint. After all,
+                            it started with a burger!<br>
+                        </p>
+                        <a href="src/our-story/index.html" class="btn btn-red-outline text-white">Read More <i class="fas fa-angle-right"></i></a>
+                    </div>
+
+            </div>
+        </article>
+    </section>
+<!-- -------------------------------- Hero --------------------------------- -->
+    <section id="reservation" class="hero hero-reservation full__height">
+        <div class="call-to-action">
+            <h1 class="call-to-action-title hero-title">Ma<span class="hero-title-underline">ke a Reserva</span>tion</h1>
+            <div class="call-to-action-body center">
+                <div class="hide-responsive">
+                    <iframe src="https://www.opentable.com/widget/reservation/canvas?rid=1033708&amp;type=standard&amp;theme=wide&amp;overlay=false&amp;domain=com&amp;lang=en-US&amp;r3abvariant=false&amp;r3uid=oJXut6gQwU&amp;newtab=false&amp;disablega=false" width="840" height="350" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div class="hide-web open-table-responsive-wrapper">
+                    <iframe class="open-table-responsive" src="https://www.opentable.com/widget/reservation/canvas?rid=1033708&amp;type=standard&amp;theme=standard&amp;overlay=false&amp;domain=com&amp;lang=en-US&amp;r3abvariant=false&amp;r3uid=eQtpovab6&amp;newtab=false&amp;disablega=false" frameborder="0" scrolling="no" width="170px" height="195px"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- --------------------------- Instagram Posts --------------------------- -->
+    <section>
+        <article >
+            <div class="instagram-posts">
+                <div class="hero-title text-white text-center instagram-title">
+                    <h4 class="">Follow us <br>on <span class="hero-title-underline"> instagr</span>am</h4>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="0" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="1" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="2" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="3" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="4" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="5" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="6" class="box-img"></div></a></div>
+                <div class="box"><a target="_blank" href="https://www.instagram.com/fmkitchenandbar/?hl=es-la"><div text="7" class="box-img"></div></a></div>
+            </div>
+
+        </article>
+    </section>
+<!-- ------------------------------- Footer -------------------------------- -->
+    <footer class="footer">
+            <!-- <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1033708&type=standard&theme=wide&iframe=true&overlay=false&domain=com&lang=en-US'></script> -->
+        <div class="bg-black text-center text-white">
+            <div class="footer-container">
+                <div class="footer-text">
+                    <p class="logo-footer">
+                        <i class="fab fa-instagram fa-lg"></i>
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                        <i class="fas fa-grip-lines-vertical fa-lg"></i>
+                        <img src="src/images/doordash-logo.png" alt="">
+                        <span class="uber-eats">Uber <strong>Eats</strong></span>
+                    </p>
+                </div>
+                <div class="footer-text">
+                    <p class="">
+                        <span class="fa-stack pet-icon pet-icon-footer">
+                            <i class="fas fa-paw fa-stack-1x"></i>
+                            <i class="far fa-circle fa-stack-2x"></i>
+                        </span>
+                        <div class="pet-text">
+                            <br>Pet friendly
+                        </div>
+                    </p>
+                </div>
+                <div class="footer-text">
+                    <p class="copyrights">Copyright 2019 FM Kitchen & Bar. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- ----------------------------- Custom CSS ------------------------------ -->
+<link rel="stylesheet" href="src/css/styles.css">
+<!-- --------------------------- Font Awesome 5 ---------------------------- -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<!-- ----------------- Navbar Desktop & Responsive Scripts ----------------- -->
+    <script src="src/js/minified/scripts.min.js"></script>
+<!-- ------------------------- Hero Slider Script -------------------------- -->
+    <script src="src/js/minified/hero-slider.min.js"></script>
+<!-- -------------------------- Instagram Script --------------------------- -->
+    <script src="src/js/minified/instagram-feed.min.js"></script>
+
+    <script>
+        //alert("hi")
+    </script>
+</body>
+</html>
